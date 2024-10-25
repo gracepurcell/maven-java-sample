@@ -28,7 +28,7 @@ jobs:
           ${{ runner.os }}-m2-
 
     - name: Build package
-      run: ./mvnw package
+      run: sudo ./mvnw package
 
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@v3.0
